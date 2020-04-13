@@ -23,7 +23,7 @@ const Header = (props) => (
           </p>
 
           <p>
-            This web application is a small application of the Fourier Transform, after extracting the (x,y) coordinates from the SVG path passed as a file, it then uses a known algorithm called the Fast Fourier Transform (FFT), also known as the Cooley-Tukey algorithm, in order to generate the appropriate frequencies, then it's been drawn gradually using epicycles.
+            This web application is a small application of the Fourier Transform, after extracting the (x,y) coordinates from the SVG path passed in as a file, it then uses a known algorithm called the Fast Fourier Transform (FFT), also known as the Cooley-Tukey algorithm, in order to generate the appropriate frequencies, then it's been drawn gradually using epicycles.
           </p>
         </div>
       </div>
