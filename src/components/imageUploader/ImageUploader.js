@@ -62,10 +62,10 @@ class ImageUploader extends Component {
         this.start_drawing( path , width , height );
         this.setState({ errorResponse : "Processing...", success : true, path : path});
       } else {
-        this.setState({ file: null, fileURL : './upload.png', success : false, errorResponse : "Problem while reading the file, please try another file"});
+        this.setState({ file: null, fileURL : './assets/file-upload.png', success : false, errorResponse : "Problem while reading the file, please try another file"});
       }
     })
-    .catch(err => this.setState({ file: null, fileURL : './upload.png', success : false, errorResponse : "Problem while reading the file, please try another file"}));
+    .catch(err => this.setState({ file: null, fileURL : './assets/file-upload.png', success : false, errorResponse : "Problem while reading the file, please try another file"}));
   }
 
   stringToXML = (oString) => {
