@@ -1,0 +1,154 @@
+// Predefined Break-points
+$breakPoint-1: 1200px;
+$breakPoint-2: 840px;
+
+
+.upload_sketch_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .error-panel {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.77);
+    margin-bottom: 3rem;
+
+    .false {
+      color: rgba(222, 1, 1, 0.77);
+    }
+
+    .true {
+      color: rgba(36, 156, 0, 0.77);
+    }
+  }
+
+  .input_container {
+    margin-top: 50px;
+    [type="file"] {
+      height: 0;
+      overflow: hidden;
+      width: 0;
+    }
+
+    [type="file"] + label {
+      background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+      box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: 'Nunito', sans-serif;
+      font-size: inherit;
+      font-weight: 600;
+      text-transform: uppercase;
+      outline: none;
+      padding: 1rem 50px;
+      position: relative;
+      transition: all 0.3s;
+      vertical-align: middle;
+      background-size: 300% 100%;
+      border-radius: 50px;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+
+      &:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        box-shadow: none;
+
+      }
+
+    }
+
+  }
+
+  .image_sketch_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column-gap: 5em;
+    margin-bottom: 5em;
+
+    .image_container {
+      border: 1px solid rgba(148, 142, 148, 0.22);
+      border-radius: 10px;
+      box-shadow: 0 15px 15px 0 rgba(87, 87, 87, 0.26);
+      width: 500px;
+      height: 500px;
+
+      img {
+        padding: 40px;
+        max-width: 500px;
+        max-height: 500px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+
+  }
+
+}
+
+
+@media only screen and (max-width: $breakPoint-1) {
+
+  .upload_sketch_container {
+
+    .image_sketch_container {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      grid-column-gap: 5em;
+
+      .image_container {
+        width: 350px;
+        height: 350px;
+
+        img {
+          max-width: 350px;
+          max-height: 350px;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: $breakPoint-2) {
+
+  .upload_sketch_container {
+
+    .image_sketch_container {
+      grid-template-columns: 1fr;
+      align-items: center;
+      grid-row-gap: 5em;
+
+      .image_container {
+        width: 350px;
+        height: 350px;
+
+        img {
+          max-width: 350px;
+          max-height: 350px;
+        }
+
+      }
+
+    }
+
+  }
+
+}

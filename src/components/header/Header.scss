@@ -1,0 +1,62 @@
+.header {
+
+  margin: 5em 0 5em 0;
+
+  .image_description_container {
+    width: 1200px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 15px 25px 0 rgba(87, 87, 87, 0.17);
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 5em;
+
+    .fourier_image {
+      img {
+        max-width: 400px;
+        max-height: 550px;
+        border-radius: 10px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 50px;
+      }
+    }
+
+
+    .description {
+      display: grid;
+      grid-template-rows: 1fr 5fr;
+      // grid-row-gap: 5em;
+      align-items: center;
+
+      .title {
+        font-family: 'Playfair Display', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3em;
+        // font-weight: bold;
+      }
+
+      .details {
+
+        p {
+          font-family: 'Nunito', sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1.1em;
+          line-height: 1.2em;
+          text-align: justify;
+          letter-spacing: 0.5px;
+          color: rgba(0, 0, 0, 0.85);
+          padding: 0 50px 20px 0;
+
+        }
+      }
+    }
+
+  }
+
+}
