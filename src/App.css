@@ -15,6 +15,10 @@ body {
   background-color: rgba(194, 194, 194, 0.1);
 }
 
+a {
+  text-decoration: none; 
+}
+
 .button.element {
     width: 200px;
     font-family: 'Roboto', sans-serif;

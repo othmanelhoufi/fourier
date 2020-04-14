@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Sketch from '../sketch/Sketch';
 import './ImageUploader.scss';
+import Zoom from 'react-reveal/Zoom';
+
 import Complex from 'complex.js';
 import {generate_transformed_data} from '../../utils/Algorithms';
 
@@ -94,31 +96,38 @@ class ImageUploader extends Component {
 
       <div className="image_uploader" >
 
-        <div className="upload_sketch_container">
+        <Zoom cascade>
 
-          <div className="input_container">
-            <input type="file" id="file" accept=".svg" onChange={this.handleChange} />
-            <label htmlFor="file">Upload SVG</label>
-          </div>
 
-          <div className="error-panel">
-            <div className={`response ${this.state.success}`}>
-              {this.state.errorResponse}
+          <div className="upload_sketch_container">
+
+            <div className="input_container">
+              <input type="file" id="file" accept=".svg" onChange={this.handleChange} />
+              <label htmlFor="file">Upload SVG</label>
+            </div>
+
+            <div className="error-panel">
+              <div className={`response ${this.state.success}`}>
+                {this.state.errorResponse}
+              </div>
+            </div>
+
+            <div className="image_sketch_container">
+
+              <div className="image_container" >
+                <img src={this.state.fileURL} alt="svg"></img>
+              </div>
+
+              <div className="sketch_container">
+                <Sketch data={this.state.pointsArray} />
+              </div>
+
             </div>
           </div>
 
-          <div className="image_sketch_container">
 
-            <div className="image_container" >
-              <img className={this.state.success} src={this.state.fileURL} alt="svg"></img>
-            </div>
 
-            <div className="sketch_container">
-              <Sketch data={this.state.pointsArray} />
-            </div>
-
-          </div>
-        </div>
+        </Zoom>
 
       </div>
     );

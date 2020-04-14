@@ -62,6 +62,13 @@ $breakPoint-6: 420px;
           color: rgba(0, 0, 0, 0.85);
           padding: 0 50px 20px 0;
 
+          span {
+            color: rgba(13, 13, 13, 0.38);
+            ont-family: 'Nunito', sans-serif;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 0.7em;
+          }
         }
       }
     }
