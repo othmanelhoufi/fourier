@@ -60,9 +60,11 @@ class ImageUploader extends Component {
       const path = ( svgXML.querySelector('path') ) ? svgXML.querySelector('path') : null;
       const width = ( svgXML.querySelector('svg').attributes.width) ? svgXML.querySelector('svg').attributes.width.value : undefined;
       const height = ( svgXML.querySelector('svg').attributes.height) ? svgXML.querySelector('svg').attributes.height.value : undefined;
-      if (path !== null && path instanceof SVGPathElement) {
+      if (path !== null && path instanceof SVGPathElement && width && height) {
         this.start_drawing( path , width , height );
         this.setState({ errorResponse : "Processing...", success : true, path : path});
+      } else if ( !width || !height ) {
+        this.setState({ file: null, fileURL : './assets/file-upload.png', success : false, errorResponse : "The SVG data must contain a correct width and height"});
       } else {
         this.setState({ file: null, fileURL : './assets/file-upload.png', success : false, errorResponse : "Problem while reading the file, please try another file"});
       }
