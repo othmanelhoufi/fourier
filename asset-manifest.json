@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fourier/static/css/main.b8814931.chunk.css",
-    "main.js": "/fourier/static/js/main.366101be.chunk.js",
-    "main.js.map": "/fourier/static/js/main.366101be.chunk.js.map",
+    "main.js": "/fourier/static/js/main.919dc0db.chunk.js",
+    "main.js.map": "/fourier/static/js/main.919dc0db.chunk.js.map",
     "runtime-main.js": "/fourier/static/js/runtime-main.17154dbb.js",
     "runtime-main.js.map": "/fourier/static/js/runtime-main.17154dbb.js.map",
     "static/js/2.2cf52672.chunk.js": "/fourier/static/js/2.2cf52672.chunk.js",
     "static/js/2.2cf52672.chunk.js.map": "/fourier/static/js/2.2cf52672.chunk.js.map",
     "index.html": "/fourier/index.html",
-    "precache-manifest.518622984da2c6f50dd58ef1649185e6.js": "/fourier/precache-manifest.518622984da2c6f50dd58ef1649185e6.js",
+    "precache-manifest.421104b8a596dc1276240d4e0d84db28.js": "/fourier/precache-manifest.421104b8a596dc1276240d4e0d84db28.js",
     "service-worker.js": "/fourier/service-worker.js",
     "static/css/main.b8814931.chunk.css.map": "/fourier/static/css/main.b8814931.chunk.css.map",
     "static/js/2.2cf52672.chunk.js.LICENSE.txt": "/fourier/static/js/2.2cf52672.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.17154dbb.js",
     "static/js/2.2cf52672.chunk.js",
     "static/css/main.b8814931.chunk.css",
-    "static/js/main.366101be.chunk.js"
+    "static/js/main.919dc0db.chunk.js"
   ]
 }

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2e3d1814375b9d60301dd647ae224c61",
+    "revision": "019508525a66716847fdb81ebeaa3cb6",
     "url": "/fourier/index.html"
   },
   {
-    "revision": "5b2b58ac2cc07d08a6f9",
+    "revision": "ab7a0a0f850b56e5e5b2",
     "url": "/fourier/static/css/main.b8814931.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fourier/static/js/2.2cf52672.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5b2b58ac2cc07d08a6f9",
-    "url": "/fourier/static/js/main.366101be.chunk.js"
+    "revision": "ab7a0a0f850b56e5e5b2",
+    "url": "/fourier/static/js/main.919dc0db.chunk.js"
   },
   {
     "revision": "4c0e3584f7840d8c4c3d",
