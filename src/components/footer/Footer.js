@@ -23,12 +23,10 @@ const Footer = (props) => (
               </div>
             </a>
 
-            <a href="#">
-              <div className="profil">
-                <img src="./assets/whitemass.png" alt="whitemass" ></img>
-                <div className="fullname">White Mass</div>
-              </div>
-            </a>
+            <div className="profil">
+              <img src="./assets/whitemass.png" alt="whitemass" ></img>
+              <div className="fullname">White Mass</div>
+            </div>
 
           </div>
 
