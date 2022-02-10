@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "complex.js": "^2.0.11",
     "image-js": "^0.21.9",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "p5": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
